@@ -1,0 +1,547 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*Basic CSS reset*/
+
+div, p, body, header, footer, section, article, nav, h1, h2, h3
+{
+	margin: 0;
+	padding: 0;		
+}
+
+p, h2, h3
+{
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif
+}
+
+
+img
+{
+
+	margin: 0;
+	padding: 0;	
+}
+
+.hidden
+{
+	display: none;	
+}
+
+body
+{
+	font-family:Helvetica, Arial, sans-serif,"Franklin Gothic Bold", "Arial Black", sans-serif;	
+	font-size: 14px;
+	color: #000000;
+	background-color:#CCC;
+	background:url(../images/brickwall.png);
+}
+
+a
+{
+	text-decoration: none; /*Removes Link Underlines*/
+}
+
+
+#container
+{
+	width:980px;
+	margin: 0 auto;
+	background-color:#FFF;	
+}
+#topBar
+{
+width: 980px;
+height:40px;
+background-color:#ED1C24;	
+}
+#mainHeader
+{
+	height:130px;
+	width: 960px;
+	overflow:hidden;
+}
+
+#logoHeader
+{
+	float: left;
+	margin-top: 1-0px;
+	margin-left: 10px;
+	width:215px;
+	height:100px;
+}
+
+#logoFooter
+{
+	float: left;
+	margin-top: 1-0px;
+	margin-left: 10px;
+	width:215px;
+	height:100px;
+}
+#mainNav
+{
+	width: 560px;
+	float: right;
+	margin-right:15px;
+	
+}
+
+
+#mainNav ul
+{
+	list-style-type: none; /*Removes Bullet Points*/	
+	float: right;
+	padding: 0;
+	margin-top: 62px;
+
+}
+
+#mainNav ul li
+{
+	display:inline;
+	margin-left: 25px;
+	font:Arial;
+	
+}
+
+#mainNav ul li
+{
+	color: #2073a8;
+	padding: 5px;	
+}
+
+/*Fancy Nav hover effect begins*/
+#mainNav ul li a
+{
+ display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  font-family:"varsity regular";
+  font-size: 18px;
+}
+
+
+#mainNav ul li a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ED1C24;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+#mainNav ul li a:hover, #mainNav ul li a:focus, #mainNav ul li a:active {
+  color: white;
+}
+#mainNav ul li a:hover:before, #mainNav ul li a:focus:before, #mainNav ul li a:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+/*Fancy Nav hover effect ends*/
+
+
+
+
+
+header h2
+{
+	clear: both;
+	color: #fff;
+	font-size:31px;
+	margin-top: 410px;
+	text-align: center;
+}
+
+header h3
+{
+	font-size: 14px;
+	color: #FFF;
+	text-align: center;
+	font-weight:normal;
+	
+}
+
+#promoItems
+{
+	overflow: hidden; /*Prevent collapsing, no hard height*/
+	padding: 30px 20px 0px 20px;
+		
+}
+/*Element 1*/
+#baseball
+{
+	width: 280px;
+	float:left;
+	margin-right:40px;	
+}
+/*Element 2*/
+#toques
+{
+	
+	width:280px;
+	float:left;
+	margin-right:40px;
+}
+/*Element 3*/
+#signs
+{
+	width: 280px;
+	float: left;	
+}
+
+#contentArea{
+	
+	width:920px;
+	height:300px;
+	background-color:white;
+	margin-left:30px;	
+	margin-bottom:88px;
+	margin-top:10px;
+}
+/*Fancy content area hover effect*/
+
+#contentArea ul li {
+list-style-type: none; /*Removes Bullet Points*/	
+text-align: center;	
+}
+#contentArea ul li a
+{
+ display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  font-family:"varsity regular";
+  font-size: 18px;
+}
+
+
+#contentArea ul li a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ED70EB;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+#contentArea ul li a:hover, #contentArea ul li a:focus, #contentArea ul li a:active {
+  color:#17E3F0;
+}
+#contentArea ul li a:hover:before, #contentArea ul li a:focus:before, #contentArea ul li a:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+/*Fancy content area hover effect ends*/
+
+
+#promoItems p
+{
+	font-size: 16px;
+	margin-top: 20px;	
+	line-height: 22px;
+	color: #666;
+}
+
+
+#mainFooter
+{
+		height: 124px;
+		width:980px;
+		background-color:#ED1C24;
+}
+
+#logoFooter
+{
+
+	float: left;
+	margin-top: 25px;
+	margin-left: 2px;
+	margin-bottom: 20px;	
+}
+
+#socialMediaCon
+{
+		float:right;
+		width:175px;
+		height: 45px;
+		margin-top:25px;
+}
+
+#iconNav
+
+{
+	list-style: none;
+	margin: 0;
+	padding: 0; 
+		
+}
+
+#iconNav li
+{
+ float: left;	
+margin-right: 10px;
+}
+
+#iconNav a
+{
+	height:45px;
+	width:45px;
+	display:block;
+	filter: grayscale(100%);	
+}
+
+#iconNav a:hover
+{
+	filter: grayscale(0%);	
+}
+
+#footerNav
+{
+	clear: both;	
+	margin-left: 20px;
+}
+
+#footerNav ul
+{
+	list-style:none;	
+	padding: 0;
+}
+
+#footerNav ul li
+{
+	display: inline;
+	margin-right: 25px;
+	font-size: 18px;
+	 font-family:"varsity regular";
+}
+
+
+/*Fancy footerNav hover effect begins*/
+#footerNav ul li a
+{
+ display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+
+#footerNav ul li a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ED70EB;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+#footerNav ul li a:hover, #footerNav ul li a:focus, #footerNav ul li a:active {
+  color: #17E3F0;
+}
+#footerNav ul li a:hover:before, #footerNav ul li a:focus:before, #footerNav ul li a:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+/*Fancy footerNav hover effect ends*/
+
+
+
+/*Contact page */
+
+#mainHeaderContact
+{
+	height: 100px;
+	width: 980px;
+	overflow:hidden;
+	
+}
+
+#mainContact
+{
+	overflow: hidden;
+	width: 940;
+	padding-left: 20px;
+	padding-right:	20px;
+	padding-top: 20px;
+}
+
+#mainContact h2
+{
+	font-size: 30px;
+	color: #1D4078;
+	padding: 8px 0px 8px 5px; /*trbl*/
+	margin-bottom:40px;
+	
+}
+
+#contactArea
+{
+	width: 469px;
+	float: left;
+	border-right: solid 1px #CCC;
+	
+}
+
+#contactText
+{
+	font-size: 21px;
+	margin-bottom: 30px;
+	width: 340px;	
+}
+
+#mapArea
+{
+	float:left;
+	width: 380px;
+	margin-left: 20px;	
+}
+
+input, textarea
+{
+	display: block;
+	width: 300px;
+	padding: 10px;	
+	margin-bottom: 20px;
+	margin-top: 20px;
+	background-color: #efefef;
+	border-color: 1px solid #999;
+	color: #333;
+
+}
+
+#comments
+{
+	width: 360px;
+	height: 150px;
+	resize:none;
+}
+
+#submit
+{
+	display: block;
+	width: 75px;
+	height: 30px;
+	background-color:#2073a8;
+	text-align:center;
+	color: #FFF;
+	font-size:14px;
+	border: 1px solid #003471;
+	padding: 5px 10px 5px 10px; /*trbl*/	
+}
+
+#mapArea h3
+{
+	font-size: 21px;
+	color: #1D4078;	
+}
+
+#mapArea ul
+{
+	list-style: none;
+	padding:0;
+}
+/*About Page*/
+
+#promoImage
+{
+	height: 250px;
+	width: 280px;
+	background-color:white;	
+	float:right;
+	margin-right:20px;
+	
+}
+
+/*Element 1*/
+#hats
+{
+	width: 200px;
+	float:left;
+	margin-right:40px;	
+}
+/*Element 2*/
+#fanSigns
+{
+	
+	width:200px;
+	float:left;
+	margin-right:40px;
+}
+/*Element 3*/
+#figurines
+{
+	width: 200px;
+	float: left;
+	margin-right:40px;	
+}
+/*Element 4*/
+#cards
+{
+	width: 200px;
+	float: left;	
+}
+.h2{
+margin-left:20px;
+	
+	
+}
+
